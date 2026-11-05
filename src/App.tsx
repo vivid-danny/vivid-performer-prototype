@@ -490,7 +490,7 @@ export default function App() {
 
             <div className="content-stretch flex items-start pb-[48px] pt-0 px-0 relative shrink-0 w-full">
               <div className="w-full flex justify-center px-[40px]">
-                <div className="relative w-full max-w-[1440px]">
+                <div className="relative w-full max-w-[1200px]">
 
                   <div className="flex flex-row w-full gap-16 pt-8">
                     {/* Main Content */}
