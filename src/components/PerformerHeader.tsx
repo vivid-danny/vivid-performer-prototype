@@ -46,7 +46,7 @@ function PerformerInfo() {
       data-name="performerInfo"
     >
       <div className="flex justify-center">
-        <div className="flex flex-col items-start w-full max-w-[1440px] py-16 pr-[340px] relative">
+        <div className="flex flex-col items-start w-full max-w-[1200px] py-16 pr-[340px] relative">
           <TitleGroup />
         </div>
       </div>
