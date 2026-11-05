@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-export type LayoutVersion = 1 | 2;
+export type LayoutVersion = 1 | 2 | 3;
 
 interface VersionSwitcherProps {
   value: LayoutVersion;
@@ -10,6 +10,7 @@ interface VersionSwitcherProps {
 const versions: { id: LayoutVersion; label: string }[] = [
   { id: 1, label: "V1" },
   { id: 2, label: "V2" },
+  { id: 3, label: "V3" },
 ];
 
 export function VersionSwitcher({

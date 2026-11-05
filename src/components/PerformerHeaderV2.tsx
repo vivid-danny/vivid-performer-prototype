@@ -65,7 +65,7 @@ function ImageContainer() {
       data-name="imageContainer"
     >
       <div
-        className="h-[160px] overflow-clip relative rounded-[inherit] shrink-0 w-[284px]"
+        className="h-[120px] overflow-clip relative rounded-[inherit] shrink-0 w-[213px]"
         data-name="Image Component"
       >
         <img

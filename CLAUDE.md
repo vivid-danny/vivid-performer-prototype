@@ -17,7 +17,10 @@ An interactive prototype exploring agentic AI on the Vivid Seats performer page.
 
 ## Key Files
 
-- `src/App.tsx` — main layout, state, and chip interaction logic
+- `src/App.tsx` — page state, chip interaction logic, and the shared content column
+- `src/components/layouts/LayoutV{1,2,3}.tsx` — the three layout shells; each wraps the shared content column passed as children
+- `src/components/VersionSwitcher.tsx` — floating V1/V2/V3 switcher and the `LayoutVersion` union
+- `src/components/PerformerHeader.tsx` (V1) / `PerformerHeaderV2.tsx` / `PerformerHeaderV3.tsx` — per-layout page headers
 - `src/components/DecisionChips.tsx` — AI chip selector (level 0 + level 1 follow-ups, streaming view)
 - `src/components/ProductionCard.tsx` — event listing card with Best Match badge
 - `src/data/events.ts` — event data, ranking functions, recommendation reason generators
