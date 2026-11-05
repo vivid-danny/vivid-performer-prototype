@@ -32,7 +32,15 @@ function Tab1() {
   );
 }
 
-export function TabCollection() {
+interface TabCollectionProps {
+  /** Draws the collection's own bottom hairline. Off when the
+   *  surrounding header already carries a border (V2 layout). */
+  bordered?: boolean;
+}
+
+export function TabCollection({
+  bordered = true,
+}: TabCollectionProps = {}) {
   return (
     <div
       className="content-stretch flex items-center overflow-clip relative shrink-0 w-full"
@@ -40,10 +48,12 @@ export function TabCollection() {
     >
       <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
         <div className="basis-0 content-stretch flex grow h-full items-center min-h-px min-w-px relative shrink-0">
-          <div
-            aria-hidden="true"
-            className="absolute border-[#d3d3dc] border-[0px_0px_1px] border-solid inset-0 pointer-events-none"
-          />
+          {bordered && (
+            <div
+              aria-hidden="true"
+              className="absolute border-[#d3d3dc] border-[0px_0px_1px] border-solid inset-0 pointer-events-none"
+            />
+          )}
           <div className="basis-0 content-stretch flex grow items-center min-h-px min-w-px overflow-clip relative shrink-0">
             <Tab />
             <Tab1 />
